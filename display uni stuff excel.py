@@ -4,7 +4,7 @@ import os
 
 import get_uni_info2
 
-filename = 'uni stuff.xlsx'  # change to whatever your excel file is named
+filename = 'unis excel file.xlsx'  # change to whatever your excel file is named
 
 if os.path.isfile(filename):
     workbook = openpyxl.load_workbook(filename)
@@ -18,7 +18,7 @@ else:
     sheet["C1"] = "Courses"
     sheet["D1"] = "Entry requirement"
 
-    workbook.save(filename="uni stuff.xlsx")
+    workbook.save(filename=filename)
 
 
 
@@ -33,7 +33,7 @@ start = int(input("Where do you want to start: "))
 
 
 
-row = 719
+row = 1
 
 for i in range(start, start+num_of_unis_inp):
 
